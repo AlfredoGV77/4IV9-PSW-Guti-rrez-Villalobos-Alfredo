@@ -1,0 +1,179 @@
+*{
+    padding: 5px;
+    margin: 5px;
+    color: rgb(240, 240, 240);
+    text-align: center;
+}
+
+html,body{
+    background-color: rgba(101, 98, 228, 0.904);
+}
+
+.main-container{
+    border: 1px rgb(19, 1, 4);
+    border-radius: 1px;
+    margin: 1rem;
+    background-color: rgb(219, 136, 217);
+}
+
+footer,section,article,aside{
+    border: 5px rgb(255, 255, 255);
+    margin: .5rem;
+    border-radius:20px ;
+    padding: 1rem;
+    
+}
+
+section{
+    width: 40%;
+    display: inline-block;
+    height: 350px;
+    background-color: turquoise;
+}
+
+article{
+    width: 50%;
+    display: inline-block;
+    height: 80%;
+    background-color: rgb(218, 116, 221);
+}
+
+section,footer{
+    background-color: rgba(194, 193, 235, 0.89);
+}
+
+.burbuja{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    opacity: .3;
+
+    position:absolute;
+    bottom: -150;
+    left: 5%;
+
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    animation-duration: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 10s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(6){
+    width: 500px;
+    height: 500px;
+    left: 65%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 10px;
+    height: 10px;
+    left: 83%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 150px;
+    height: 150px;
+    left: 21%;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(10){
+    width: 324px;
+    height: 324px;
+    left: 87%;
+    animation-delay: 6s;
+    animation-duration: 9.5s;
+}
+
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+#menu{
+    background-image: url(https://i.pinimg.com/564x/3b/66/f8/3b66f8792dc2fe7ff388e5b47b2a3f4d.jpg);
+}
+
+#menu ul{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+#menu ul li a{
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 20pt;
+    display: block;
+    padding: 10px 300px;
+    text-decoration: wavy;
+}
+
+#menu ul li a:hover{
+    background-color: rebeccapurple;
+}
