@@ -1,0 +1,369 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0px;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	/*Fin de Menù lateral*/
+
+
+.letraschidas{
+    margin-top: 400px;
+    margin-left: 250px;
+    
+    
+}
+
+.mil{
+    float: right;
+    margin-right: 230px;
+    margin-top: -350px;
+
+}
+
+
+
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+/*Fin de Menù lateral*/
+
+.burbuja{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(146, 141, 141);
+    opacity: .05;
+
+    position:absolute;
+    bottom: -150;
+    left: 90%;
+
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    animation-duration: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 10s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(5){
+    width: 80px;
+    height: 80px;
+    animation-duration: 3s;
+}
+
+.burbuja:nth-child(6){
+    width: 5px;
+    height: 5px;
+    left: 5%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 10px;
+    height: 10px;
+    left: 83%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 10px;
+    height: 10px;
+    left: 21%;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(10){
+    width: 324px;
+    height: 324px;
+    left: 45%;
+    animation-delay: 6s;
+    animation-duration: 9.5s;
+}
+
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+*{
+    background-color: black;
+    color: lavender;
+}
+
+
+.letraschidas span{
+    font-size: 100pt;
+    font-weight: bold;
+    position: relative;
+    font-family: "Fredoka One";
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.letraschidas span::before{
+    content: var(--l);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(40px);
+}
+
+.letraschidas span::after{
+    content: var(--l);
+    position: absolute;
+    top:80%;
+    left: 0;
+    filter: blur(30px);
+    transform: rotateX(50deg);
+}
+
+.letraschidas span:hover{
+    filter: contrast(250%);
+}
+
+.letraschidas span:nth-child(1){
+    color:#FF1178 ;
+}
+
+.letraschidas span:nth-child(2){
+    color:#FE0000 ;
+}
+
+.letraschidas span:nth-child(3){
+    color:#FFF205 ;
+}
+
+.letraschidas span:nth-child(4){
+    color: #01FFF4;
+}
+
+.letraschidas span:nth-child(5){
+    color: #7CFF01;
+}
+
+.letraschidas span:nth-child(6){
+    color: #ff7000;
+}
+
+.letraschidas span:nth-child(7){
+    color: #ff0dbf;
+}
+
+.letraschidas span:nth-child(8){
+    color: #c32aff;
+}
+
+.letraschidas span:nth-child(9){
+    color: #1F51FF;
+}
+
+.letraschidas span:nth-child(10){
+    color: #C76EFF;
+}
+
+
+
