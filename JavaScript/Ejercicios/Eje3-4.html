@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/subestilo.css">
+    <script src="../JS/problema3.js"></script>
+    <title>Ejercicio 3 y 4</title>
+</head>
+<body>
+
+    <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1>Menu</h1>
+			</div>
+		</div>
+	</header>
+
+	<div class="capa"></div>
+    <!--	--------------->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+	    <div class="cont-menu">
+		    <nav>
+                <a href="../index.html">Inicio</a>
+			    <a href="Eje1-2.html">Ejercicio 1 y 2</a>
+			    <a href="#">Ejercicio 3 y 4</a>
+			    <a href="Eje5-6.html">Ejercicio 5 y 6</a>
+			    <a href="Eje7-8.html">Ejercicio 7 y 8</a>
+			    <a href="Eje9-10.html">Ejercicio 9 y 10</a>
+		    </nav>
+		    <label for="btn-menu">✖️</label>
+	    </div>
+    </div>
+
+
+    <article class="caja">
+        <section class="EjercicioPar">
+            <h1 class="Eje1">Ejercicio 3</h1>
+            <div class="texto1">
+            <p>Una tienda ofrece un descuento del 15% sobre el total de la compra y un cliente desea saber cuanto
+                debe pagar finalmente por su compra
+            </p>
+
+            <form method="POST" name="supermercado">
+                <table class="tabla" align="center" border="1">
+                    <tr>
+                        <td class="td_sup">Precio: $</td>
+                        <td class="td_inf"><input type="text"  name="precio" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td class="td_inf"><input type="button" value="Precio Final"
+                            name="enviar" onclick="descuento()"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Su costo final es:</td>
+                        <td><input type="text" name="costo"
+                            id="cantidadi" readonly="readonly"
+                            class="input_text" ></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar" 
+                            name="reset" onclick="borrar()"></td>
+                    </tr>
+
+                </table>
+            </form>
+
+
+
+            </div>
+        </section>
+
+        <section class="EjercicioImpar">
+            <h1 class="Eje2">Ejercicio 4</h1>
+            <div class="texto2">
+            <p>Un alumno desea saber cual sera su calificacion final en la materia de Algoritmos
+                Dicha calificacion se compone de 
+                <or>
+                    <li>55% promedio de sus tres calificaciones parciales</li>
+                    <li>30% de la calificacion del examen final</li>
+                    <li>15% de su trabajo final</li>
+                </or>
+            </p>
+
+
+
+            <form method="POST" name="calificaciones">
+                <table class="tabla" align="center" border="1">
+                    <tr>
+                        <td class="td_sup">Parcial 1: </td>
+                        <td class="td_inf"><input type="text"  name="calificacion1" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Parcial 2: </td>
+                        <td class="td_inf"><input type="text"  name="calificacion2" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Parcial 3: </td>
+                        <td class="td_inf"><input type="text"  name="calificacion3" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Examen Final: </td>
+                        <td class="td_inf"><input type="text"  name="examenf" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Trabajo Final : </td>
+                        <td class="td_inf"><input type="text"  name="trabajof" onkeypress="return validar(event)"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td></td>
+                        <td class="td_inf"><input type="button" value="Promedio"
+                            name="enviar" onclick="calcularpromedio()"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Su promedio final es:</td>
+                        <td><input type="text" name="promedio"
+                            id="cantidadi" readonly="readonly"
+                            class="input_text" ></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar" 
+                            name="reset" onclick="borrar()"></td>
+                    </tr>
+
+                </table>
+            </form>
+
+
+
+            </div>
+        </section>
+        
+    </article>
+    
+</body>
+</html>
