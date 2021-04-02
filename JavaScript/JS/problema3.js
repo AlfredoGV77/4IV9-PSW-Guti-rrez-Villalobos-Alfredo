@@ -15,7 +15,7 @@ function descuento(){
     document.supermercado.costo.value="$"+preciofinal;
 }
 
-function borrar(){
+function borrar1(){
     document.supermercado.costo.value="";
     document.supermercado.precio.value="";
 }
