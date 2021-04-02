@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/subestilo.css">
+    <script src="../JS/problema1.js"></script>
+    <title>Ejercicio 1 y 2</title>
+</head>
+<body>
+
+    <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1>Menu</h1>
+			</div>
+		</div>
+	</header>
+
+	<div class="capa"></div>
+    <!--	--------------->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+	    <div class="cont-menu">
+		    <nav>
+                <a href="../index.html">Inicio</a>
+			    <a href="#">Ejercicio 1 y 2</a>
+			    <a href="Eje3-4.html">Ejercicio 3 y 4</a>
+			    <a href="Eje5-6.html">Ejercicio 5 y 6</a>
+			    <a href="Eje7-8.html">Ejercicio 7 y 8</a>
+			    <a href="Eje9-10.html">Ejercicio 9 y 10</a>
+		    </nav>
+		    <label for="btn-menu">✖️</label>
+	    </div>
+    </div>
+
+
+    <article class="caja">
+        <section class="EjercicioPar">
+            <h1 class="Eje1">Ejercicio 1</h1>
+            <div class="texto1">
+            <p>Suponga que un individuo desea invertir su capital en un banco
+                y desea saber cuanto dinero ganara depues de un mes si el banco paga
+                a razon de 2% mensual
+            </p>
+
+            <form method="POST" name="formulario">
+                <table class="tabla" align="center" border="1">
+                    <tr>
+                        <td class="td_sup">Introduce la cantidad a invertir: $</td>
+                        <td class="td_inf"><input type="text"  name="cantidad" onkeypress="return validarn(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td class="td_inf"><input type="button" value="Interes"
+                            name="enviar" onclick="interes()"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Su saldo total con interes al 2% es:</td>
+                        <td><input type="text" name="sueldoti"
+                            id="cantidadi" readonly="readonly"
+                            class="input_text" ></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar" 
+                            name="reset" onclick="borrar()"></td>
+                    </tr>
+
+                </table>
+            </form>
+
+
+            </div>
+        </section>
+
+        <section class="EjercicioImpar">
+            <h1 class="Eje2">Ejercicio 2</h1>
+            <div class="texto2">
+            <p>Un vendedor recibe un sueldo base mas un 10% extra por comision 
+                de sus ventas, el vendedor desea saber cuanto dinero obtendra por concepto de comisiones
+                por las tres ventas que realizan en el mes y el total que recibira en el mes tomando
+                en cuenta su sueldo base y comisiones
+            </p>
+
+
+                <form method="POST" name="Ventas">
+                    <table class="tabla" align="center" border="1">
+                        <tr>
+                            <td class="td_sup">Introduce tu sueldo base: $</td>
+                            <td class="td_inf"><input type="text"  name="sueldobase" onkeypress="return validarnumero(event)"></td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_sup">Introduce los productos vendidos</td>
+                            <td class="td_inf"><input type="text" 
+                                name="productos" onkeypress="return validarnumero2(event)"></td>
+                        </tr>
+
+
+                        <tr>
+                            <td></td>
+                            <td class="td_inf"><input type="button" value="Calcular"
+                                name="enviar" onclick="calcularsueldo()"></td>
+                        </tr>
+
+    
+                        <tr>
+                            <td class="td_sup">Su sueldo total es:$</td>
+                            <td><input type="text" name="sueldoti2"
+                                id="cantidadi2" readonly="readonly"
+                                class="input_text" ></td>
+                        </tr>
+    
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="Borrar" 
+                                name="reset" onclick="borrar2()"></td>
+                        </tr>
+    
+                    </table>
+                </form>
+
+
+
+            </div>
+        </section>
+        
+    </article>
+    
+</body>
+</html>
