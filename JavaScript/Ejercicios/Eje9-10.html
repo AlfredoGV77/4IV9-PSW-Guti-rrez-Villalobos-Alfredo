@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/subestilo.css">
+    <script src="../JS/problema9.js"></script>
+
+    <title>Ejercicio 9 y 10</title>
+</head>
+<body>
+
+    <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1>Menu</h1>
+			</div>
+		</div>
+	</header>
+
+	<div class="capa"></div>
+    <!--	--------------->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+	    <div class="cont-menu">
+		    <nav>
+                <a href="../index.html">Inicio</a>
+			    <a href="Eje1-2.html">Ejercicio 1 y 2</a>
+			    <a href="Eje3-4.html">Ejercicio 3 y 4</a>
+			    <a href="Eje5-6.html">Ejercicio 5 y 6</a>
+			    <a href="Eje7-8.html">Ejercicio 7 y 8</a>
+			    <a href="#">Ejercicio 9 y 10</a>
+		    </nav>
+		    <label for="btn-menu">✖️</label>
+	    </div>
+    </div>
+
+
+    <article class="caja">
+        <section class="EjercicioPar">
+            <h1 class="Eje1">Ejercicio 9</h1>
+            <div class="texto1">
+            <p>Cantidad de dinero que recibira un trabajador... que flojera escribir lo demas
+                XD. No se puede hacer copypaste :c
+            </p>
+
+
+            <form method="POST" name="HorasExtra">
+                <table class="tabla" align="center" border="1">
+                    <tr>
+                        <td class="td_sup">Introduce el sueldo por hora:</td>
+                        <td class="td_inf"><input type="text"  name="sueldo_hora" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Introduce el numero de horas trabajadas:</td>
+                        <td class="td_inf"><input type="text"  name="horas" onkeypress="return validar(event)"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td></td>
+                        <td class="td_inf"><input type="button" value="Calcular Sueldo"
+                            name="enviar" onclick="sueldos()"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Tu sueldo es:</td>
+                        <td><input type="text" name="sueldo"
+                            id="cantidadi" readonly="readonly"
+                            class="input_text" ></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar" 
+                            name="reset" onclick="borrar()"></td>
+                    </tr>
+
+                </table>
+            </form>
+
+
+
+            </div>
+        </section>
+
+        <section class="EjercicioImpar">
+            <h1 class="Eje2">Ejercicio 10</h1>
+            <div class="texto2">
+            <p>Donaciones</p>
+
+
+            <form method="POST" name="utilidad">
+                <table class="tabla" align="center" border="1">
+                    <tr>
+                        <td class="td_sup">Introduce tu sueldo:</td>
+                        <td class="td_inf"><input type="text"  name="sueldo" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Introduce tus años de antigüedad:</td>
+                        <td class="td_inf"><input type="text"  name="años" onkeypress="return validar(event)"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td></td>
+                        <td class="td_inf"><input type="button" value="Calcular utilidad"
+                            name="enviar" onclick="utilidads()"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Tu sueldo es:</td>
+                        <td><input type="text" name="sueldoX"
+                            id="cantidadi" readonly="readonly"
+                            class="input_text" ></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar" 
+                            name="reset" onclick="borrar2()"></td>
+                    </tr>
+
+                </table>
+            </form>
+
+
+            </div>
+        </section>
+        
+    </article>
+    
+</body>
+</html>
