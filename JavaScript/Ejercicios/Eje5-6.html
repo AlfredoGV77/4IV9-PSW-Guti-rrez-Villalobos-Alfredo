@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/subestilo.css">
+    <script src="../JS/problema5.js"></script>
+    <title>Ejercicio 5 y 6</title>
+</head>
+<body>
+
+    <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1>Menu</h1>
+			</div>
+		</div>
+	</header>
+
+	<div class="capa"></div>
+    <!--	--------------->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+	    <div class="cont-menu">
+		    <nav>
+                <a href="../index.html">Inicio</a>
+			    <a href="Eje1-2.html">Ejercicio 1 y 2</a>
+			    <a href="Eje3-4.html">Ejercicio 3 y 4</a>
+			    <a href="#">Ejercicio 5 y 6</a>
+			    <a href="Eje7-8.html">Ejercicio 7 y 8</a>
+			    <a href="Eje9-10.html">Ejercicio 9 y 10</a>
+		    </nav>
+		    <label for="btn-menu">✖️</label>
+	    </div>
+    </div>
+
+
+    <article class="caja">
+        <section class="EjercicioPar">
+            <h1 class="Eje1">Ejercicio 5</h1>
+            <div class="texto1">
+            <p>Calcular la edad de una persona</p>
+
+
+            <form method="POST" name="edad">
+                <table class="tabla" align="center" border="1">
+                    <tr>
+                        <td class="td_sup">Introduce tu año de nacimiento:</td>
+                        <td class="td_inf"><input type="text"  name="año" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Introduce tu mes de nacimiento:</td>
+                        <td class="td_inf"><input type="text"  name="mes" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Introduce tu día de nacimiento:</td>
+                        <td class="td_inf"><input type="text"  name="dia" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td class="td_inf"><input type="button" value="Calcular Edad"
+                            name="enviar" onclick="calcularedad()"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Su edad es:</td>
+                        <td><input type="text" name="edads"
+                            id="cantidadi" readonly="readonly"
+                            class="input_text" ></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar" 
+                            name="reset" onclick="borrar()"></td>
+                    </tr>
+
+                </table>
+            </form>
+
+
+            </div>
+        </section>
+
+        <section class="EjercicioImpar">
+            <h1 class="Eje2">Ejercicio 6</h1>
+            <div class="texto2">
+            <p>Porcentaje de hombres y mujeres de un salon</p>
+
+
+            <form method="POST" name="grupo">
+                <table class="tabla" align="center" border="1">
+                    <tr>
+                        <td class="td_sup">Introduce la cantidad de hombres: $</td>
+                        <td class="td_inf"><input type="text"  name="hombres" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Introduce la cantidad de mujeres: $</td>
+                        <td class="td_inf"><input type="text"  name="mujeres" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td class="td_inf"><input type="button" value="Calcular"
+                            name="enviar" onclick="porcentajes()"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Porcentaje de Hombres:</td>
+                        <td><input type="text" name="hom"
+                            id="hombresxd" readonly="readonly"
+                            class="input_text" ></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Porcentaje de Mujeres:</td>
+                        <td><input type="text" name="muj"
+                            id="mujeresxd" readonly="readonly"
+                            class="input_text" ></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar" 
+                            name="reset" onclick="borrar2()"></td>
+                    </tr>
+
+                </table>
+            </form>
+
+
+
+
+
+            </div>
+        </section>
+        
+    </article>
+    
+</body>
+</html>
