@@ -3,7 +3,7 @@ function validar(e){
     var teclado3 = (document.all)?e.keyCode:e.which;
     if(teclado3==8)return true;
 
-    var patron3=/[0-9\d /]/;
+    var patron3=/[0-9\d .]/;
 
     var prueba3= String.fromCharCode(teclado3);
     return patron3.test(prueba3);
