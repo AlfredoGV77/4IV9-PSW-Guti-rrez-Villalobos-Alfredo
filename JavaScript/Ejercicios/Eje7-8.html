@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/subestilo.css">
+    <script src="../JS/problema7.js"></script>
+    <title>Ejercicio 7 y 8</title>
+</head>
+<body>
+
+    <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1>Menu</h1>
+			</div>
+		</div>
+	</header>
+
+	<div class="capa"></div>
+    <!--	--------------->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+	    <div class="cont-menu">
+		    <nav>
+                <a href="../index.html">Inicio</a>
+			    <a href="Eje1-2.html">Ejercicio 1 y 2</a>
+			    <a href="Eje3-4.html">Ejercicio 3 y 4</a>
+			    <a href="Eje5-6.html">Ejercicio 5 y 6</a>
+			    <a href="#">Ejercicio 7 y 8</a>
+			    <a href="Eje9-10.html">Ejercicio 9 y 10</a>
+		    </nav>
+		    <label for="btn-menu">✖️</label>
+	    </div>
+    </div>
+
+
+    <article class="caja">
+        <section class="EjercicioPar">
+            <h1 class="Eje1">Ejercicio 7</h1>
+            <div class="texto1">
+            <p>Leer 2 numeros. Si son iguales que los multiplique, si el primero es mayor que el segundo
+                que los reste y sino que los sume
+            </p>
+
+
+            <form method="POST" name="Numeros">
+                <table class="tabla" align="center" border="1">
+                    <tr>
+                        <td class="td_sup">Introduce el numero 1:</td>
+                        <td class="td_inf"><input type="text"  name="nu1" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Introduce el numero 2:</td>
+                        <td class="td_inf"><input type="text"  name="nu2" onkeypress="return validar(event)"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td></td>
+                        <td class="td_inf"><input type="button" value="Calcular"
+                            name="enviar" onclick="calcular()"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">El resultado es:</td>
+                        <td><input type="text" name="resultadofinal"
+                            id="cantidadi" readonly="readonly"
+                            class="input_text" ></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar" 
+                            name="reset" onclick="borrar()"></td>
+                    </tr>
+
+                </table>
+            </form>
+
+
+
+
+
+
+            </div>
+        </section>
+
+        <section class="EjercicioImpar">
+            <h1 class="Eje2">Ejercicio 8</h1>
+            <div class="texto2">
+            <p>Leer 3 numeros y imprima el numero mayor</p>
+
+
+            <form method="POST" name="NumeroMayor">
+                <table class="tabla" align="center" border="1">
+                    <tr>
+                        <td class="td_sup">Introduce numero 1:</td>
+                        <td class="td_inf"><input type="text"  name="nume1" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Introduce numero 2:</td>
+                        <td class="td_inf"><input type="text"  name="nume2" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">Introduce numero 3:</td>
+                        <td class="td_inf"><input type="text"  name="nume3" onkeypress="return validar(event)"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td class="td_inf"><input type="button" value="Calcular Num. Mayor"
+                            name="enviar" onclick="mayor()"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_sup">El numero mayor es:</td>
+                        <td><input type="text" name="result"
+                            id="cantidadi" readonly="readonly"
+                            class="input_text" ></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar" 
+                            name="reset" onclick="borrar2()"></td>
+                    </tr>
+
+                </table>
+            </form>
+
+
+            </div>
+        </section>
+        
+    </article>
+    
+</body>
+</html>
