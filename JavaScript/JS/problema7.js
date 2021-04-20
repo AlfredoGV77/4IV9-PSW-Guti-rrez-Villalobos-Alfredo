@@ -14,6 +14,22 @@ function calcular(){
     var num1=parseInt(document.Numeros.nu1.value);
     var num2=parseInt(document.Numeros.nu2.value);
 
+    if( isNaN(num1) ) {
+        alert("NO ME MATE, TENGO HIJOOOOS :(((((")
+        return false;
+    }
+
+    if( isNaN(num2) ) {
+        alert("NO ME MATE, TENGO HIJOOOOS :(((((")
+        return false;
+    }
+
+    if( num1>37200000000000 || num2>37200000000000){
+        alert("Ni el vaticano tiene tanto dinero xd. Ingresa algo valido")
+        return false;
+    }
+
+
     var resultado
 
     if(num1==num2){
@@ -46,6 +62,26 @@ function mayor(){
     var numero1=parseInt(document.NumeroMayor.nume1.value);
     var numero2=parseInt(document.NumeroMayor.nume2.value);
     var numero3=parseInt(document.NumeroMayor.nume3.value);
+
+    if( isNaN(numero1) ) {
+        alert("NO ME MATE, TENGO HIJOOOOS :(((((")
+        return false;
+    }
+
+    if( isNaN(numero2) ) {
+        alert("NO ME MATE, TENGO HIJOOOOS :(((((")
+        return false;
+    }
+
+    if( isNaN(numero3) ) {
+        alert("NO ME MATE, TENGO HIJOOOOS :(((((")
+        return false;
+    }
+
+    if( numero1>37200000000000 || numero2>37200000000000 || numero3>37200000000000){
+        alert("Ni el vaticano tiene tanto dinero xd. Ingresa algo valido")
+        return false;
+    }
     
     var num_mayor=0;
 

@@ -14,6 +14,23 @@ function sueldos(){
     var horas=parseInt(document.HorasExtra.horas.value);
     var sueldo2;
 
+    
+    if( isNaN(precio) ) {
+        alert("NO ME MATE, TENGO HIJOOOOS :(((((")
+        return false;
+    }
+
+    
+    if( isNaN(horas) ) {
+        alert("NO ME MATE, TENGO HIJOOOOS :(((((")
+        return false;
+    }
+
+    if( numero1>37200000000000 || horas>24){
+        alert("Ingresa datos validos ://")
+        return false;
+    }
+
     var he;
     if(horas<=40){
         sueldo2=horas*precio;
@@ -44,6 +61,21 @@ function borrar(){
 function utilidads(){
     var sueldos=parseInt(document.utilidad.sueldo.value);
     var años=parseInt(document.utilidad.años.value);
+
+    if( isNaN(sueldos) ) {
+        alert("NO ME MATE, TENGO HIJOOOOS :(((((")
+        return false;
+    }
+    
+    if( isNaN(años) ) {
+        alert("NO ME MATE, TENGO HIJOOOOS :(((((")
+        return false;
+    }
+
+    if( sueldos>37200000000000 || años>80){
+        alert("Ingresa datos validos ://")
+        return false;
+    }
 
     if(años<1){
         sueldofinal=sueldos*1.05;

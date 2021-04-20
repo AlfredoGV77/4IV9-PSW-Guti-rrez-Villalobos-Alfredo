@@ -15,6 +15,36 @@ function calcularedad(){
     var meses=parseInt(document.edad.mes.value);
     var dias=parseInt(document.edad.dia.value);
 
+    if( isNaN(años) ) {
+        alert("NO ME MATE, TENGO HIJOOOOS :(((((")
+        return false;
+      }
+
+    if(años<1920){
+        alert("Quionda, Tutankamon ")
+        return false;
+    }
+
+    if( isNaN(meses) ) {
+        alert("NO ME MATE, TENGO HIJOOOOS :(((((")
+        return false;
+      }
+
+    if(meses<0 || meses>12){
+        alert("Tu planeta tiene mas de 12 meses? xd")
+        return false;
+    }
+
+    if( isNaN(dias) ) {
+        alert("NO ME MATE, TENGO HIJOOOOS :(((((")
+        return false;
+      }
+
+    if(dias<0 || dias>31){
+        alert("Tu planeta tiene mas de 30 dias? :0")
+        return false;
+    }
+
     /*OBTENEMOS LA FECHA DE HOY */
     var f=new Date();
     dia_actual=parseInt(f.getDate());
@@ -53,6 +83,22 @@ function borrar(){
 function porcentajes(){
     var no_hombres=parseInt(document.grupo.hombres.value);
     var no_mujeres=parseInt(document.grupo.mujeres.value);
+
+    if( isNaN(no_hombres) ) {
+        alert("NO ME MATE, TENGO HIJOOOOS :(((((")
+        return false;
+    }
+
+    if( isNaN(no_mujeres) ) {
+        alert("NO ME MATE, TENGO HIJOOOOS :(((((")
+        return false;
+    }
+
+
+    if(no_mujeres>100 || no_hombres>100){
+        alert("Psss de cuanto mide el salon? xd")
+        return false;
+    }
 
     total_alumnos=no_hombres+no_mujeres
 
