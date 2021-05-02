@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro Usuarios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+        <!--<script src="validar.js"></script>-->
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="contenedorRegistro">
+                <form method="post" id="formulario" name="formulario" action="Registro">
+                    
+                    <div class="form-control">
+                    <label>Nombre:</label>
+                    <br>
+                    <input type="text" id="bloquear" name="nombre" onkeypress="return validarabc(event)"  >
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                    </div>
+                    
+                    <br>
+                    
+                    <div class="form-control">
+                    <label>Apellido paterno:</label>
+                    <br>
+                    <input type="text" id="bloquear2" name="appat"  onkeypress="return validarabc(event)">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                    </div>
+                    
+                    
+                    <br>
+                    
+                    <div class="form-control">
+                    <label>Apellido materno:</label>
+                    <br>
+                    <input type="text" id="bloquearc" name="apmat"  onkeypress="return validarabc(event)">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                    </div>
+                    
+                    <br>
+                    
+                    <div class="form-control">
+                    <label>Edad:</label>
+                    <br>
+                    <input type="text" id="bloqueard" name="edad" onkeypress="return validarn(event)">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                    </div>
+                    
+                    <br>
+                    
+                    <div class="form-control">
+                    <label>Correo:</label>
+                    <br>
+                    <input type="email" id="bloqueare" name="correo">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                    </div>
+                    
+                    <br>
+                    
+                    <input type="submit" value="Registrar Usuario">
+                    <input type="reset" value="Borrar datos">
+                    
+                    
+                </form>
+            </div>
+            
+            
+            <br>
+            
+            
+            
+            <div class="contenedorConsultar">
+                <br>
+                <form name="formularioConsultar" id="formularioConsultar" method="get" action="Consultar">
+                    <input type="submit" value="Consultar Tabla de Usuarios">
+                </form>
+            </div>
+            
+            
+            <br>
+            
+            
+            <div class="contenedorEliminar">
+                <br>
+                <form name="formularioEliminar" id="formularioEliminar" method="post" action="Eliminar">
+                    <label>Ingresa el ID del usuario a eliminar</label>
+                    <input type="text" id="bloquearf" name="ideliminar" onkeypress="return validarn(event)">
+                    <input type="submit" value="Eliminar Registro">
+                </form>
+            </div>
+            
+            <br>
+            
+            <div class="contenedorModificar">
+                <br>
+                <form name="formularioModificar" id="formularioModificar" method="post" action="mod">
+                    <label>Ingresa el ID del usuario a modificar</label>
+                    <input type="text" id="bloquearg" name="idmodificar" onkeypress="return validarn(event)" >
+                    <input type="submit" value="Actualizar Registro">
+                </form>
+            </div>
+            
+        </div>
+     
+    </body>
+    <script src="validar.js"></script>
+</html>
+ 
