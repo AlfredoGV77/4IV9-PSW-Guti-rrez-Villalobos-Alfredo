@@ -1,0 +1,131 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-may-2021, 14:52:26
+    Author     : bailarina77
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+*{
+	box-sizing:border-box;
+	background-color: deeppink;
+}
+
+.titulo{
+	font-family: "Fredoka One";
+	color: gold;
+	font-weight: bold;
+	font-size: 32pt;
+	margin-left: 350px;
+
+}
+
+.container_RegistroPromocion{
+	margin-top: 100px;
+}
+
+
+form{
+	width:300px;
+        height: 400px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:rgb(247, 223, 11);
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+	background-color: rgb(247, 223, 11);
+}
+
+form input[type="text"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="number"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;    
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid rgb(233, 56, 189);
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:rgb(192, 23, 178);
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+
+form input[type="reset"]:hover{
+	cursor:pointer;
+}
+
+form input[type="reset"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid rgb(233, 56, 189);
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:rgb(192, 23, 178);
+} 
+
+.formLista{
+    background-color:white;
+    color: black;
+}
+
+.enlaceboton {    font-family: verdana, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   padding: 4px;
+   background-color: #ffffcc;
+   color: #666666;
+   text-decoration: none;
+}
+.enlaceboton:link,
+.enlaceboton:visited {
+   border-top: 1px solid #cccccc;
+   border-bottom: 2px solid #666666;
+   border-left: 1px solid #cccccc;
+   border-right: 2px solid #666666;
+}
+.enlaceboton:hover {
+    border-bottom: 1px solid #cccccc;
+   border-top: 2px solid #666666;
+   border-right: 1px solid #cccccc;
+   border-left: 2px solid #666666;
+}
+
+
+.container_ConsultaPromocion{
+    margin-top:50px;
+    margin-left:850px;
+}

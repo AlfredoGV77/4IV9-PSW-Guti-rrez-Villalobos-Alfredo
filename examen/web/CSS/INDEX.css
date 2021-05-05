@@ -1,0 +1,189 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04-may-2021, 22:12:38
+    Author     : bailarina77
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+*{
+    background: #ff0dbf;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+html, body {
+    height: 100%;
+  }
+  
+  .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button {
+    margin-top: 100px;
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #f75be2;
+  background: linear-gradient(90deg, rgb(178, 39, 206) 0%, rgb(208, 102, 250) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgb(239, 120, 243);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  button::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #ff00f2;
+    box-shadow: 0 0 60px rgba(210, 62, 255, 0.966);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button:hover, .button:focus {
+    color: #fcfcfc;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #cc00ff;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+
+
+
+.letraschidas span{
+    font-size: 100pt;
+    font-weight:bolder;
+    position: relative;
+    font-family: "Fredoka One";
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.letraschidas span::before{
+    content: var(--l);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(70px);
+}
+
+.letraschidas span::after{
+    content: var(--l);
+    position: absolute;
+    top:80%;
+    left: 0;
+    filter: blur(50px);
+    transform: rotateX(50deg);
+}
+
+.letraschidas span:hover{
+    filter: contrast(250%);
+}
+
+.letraschidas span:nth-child(1){
+    color:#4af7af ;
+}
+
+.letraschidas span:nth-child(2){
+    color:#fe0000 ;
+}
+
+.letraschidas span:nth-child(3){
+    color:#FFF205 ;
+}
+
+.letraschidas span:nth-child(4){
+    color: #01FFF4;
+}
+
+.letraschidas span:nth-child(5){
+    color: #7CFF01;
+}
+
+.letraschidas span:nth-child(6){
+    color: #FFF205;
+}
+
+.letraschidas span:nth-child(7){
+    color: #ff0000;
+}
+
+.letraschidas span:nth-child(8){
+    color: #ba0ffd;
+}
+
+.letraschidas span:nth-child(9){
+    color: #1F51FF;
+}
+
+.letraschidas span:nth-child(10){
+    color: #C76EFF;
+}
+
+.centrox{
+  float: left;
+  display: flex;
+  align-items: center;
+}
